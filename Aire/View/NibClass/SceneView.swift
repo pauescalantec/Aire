@@ -41,9 +41,23 @@ class SceneView: NibView {
 		let scene = SCNScene()
 		self.sceneView.scene = scene
 		self.sceneView.autoenablesDefaultLighting = false
-		self.setupARConfiguration()
+        if (ARConfiguration.isSupported) {
+            self.setupARConfiguration()
+        }
 		self.addTapGesture()
 	}
+    
+    private func setBackgroundImage() {
+        let background = UIImage(named: "park.jpg")
+        var imageView : UIImageView!
+        imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+        imageView.clipsToBounds = true
+        imageView.image = background
+        imageView.center = view.center
+        self.sceneView.addSubview(imageView)
+        self.sceneView.sendSubviewToBack(imageView)
+    }
 	
 	// creates multiple nodes
 	func createPollutants(pollutants: Dictionary<PollutantIdentifier,Pollutant>){
@@ -68,9 +82,11 @@ class SceneView: NibView {
 	}
 	
 	private func setupARConfiguration() {
-		let configuration = ARWorldTrackingConfiguration()
-		configuration.isLightEstimationEnabled = true
-		sceneView.session.run(configuration)
+        if (ARWorldTrackingConfiguration.isSupported) {
+            let configuration = ARWorldTrackingConfiguration()
+            configuration.isLightEstimationEnabled = true
+            sceneView.session.run(configuration)
+        }
 	}
 	
 	private func addTapGesture() {

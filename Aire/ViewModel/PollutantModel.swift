@@ -35,11 +35,11 @@ class PollutantModel: SCNNode {
 
 	func setPositionNear() {
 		self.position = generateRandomVector(xRadius: 1, yRadius: 1, zRadius: 2)
-	}
+    }
 	
 	func setPositionAnywhere() {
 		self.position = generateRandomVector(xRadius: 4, yRadius: 3, zRadius: 4)
-	}
+    }
 	
 	private func generateRandomVector(xRadius: Float, yRadius: Float, zRadius: Float) -> SCNVector3 {
         let randomX = Float.random(min: -(xRadius), max: xRadius)
