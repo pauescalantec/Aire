@@ -9,4 +9,4 @@ This is out first AR application and are looking to better our techniques, any s
 **naty@quimeraverde.com**
 
 
-**paulina@quimeraverde.com**
+**pauescalante8@gmail.com**
