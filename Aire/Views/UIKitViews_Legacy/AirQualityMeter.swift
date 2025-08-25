@@ -66,18 +66,18 @@ class AirQualityMeter: NibView {
 		//default value
 		self.progressView.value = 0
 		//colors
-		self.progressView.ringStyle = .gradient
-		self.progressView.gradientColors = [UIUtility.color.green,
-								   UIUtility.color.yellow,
-								   UIUtility.color.orange,
-								   UIUtility.color.red,
-								   UIUtility.color.crimson]
-		self.progressView.gradientColorLocations = [0.0,
-										   0.2,
-										   0.4,
-										   0.6,
-										   0.8]
-		self.progressView.gradientStartPosition = UICircularProgressRingGradientPosition.left
-		self.progressView.gradientEndPosition = UICircularProgressRingGradientPosition.top
+        self.progressView.gradientOptions = UICircularRingGradientOptions(
+            startPosition: UICircularRingGradientPosition.left,
+            endPosition: UICircularRingGradientPosition.top,
+            colors: [UIUtility.color.green,
+                     UIUtility.color.yellow,
+                     UIUtility.color.orange,
+                     UIUtility.color.red,
+                     UIUtility.color.crimson],
+            colorLocations: [0.0,
+                             0.2,
+                             0.4,
+                             0.6,
+                             0.8])
 	}
 }

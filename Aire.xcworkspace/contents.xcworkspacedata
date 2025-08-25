@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:AireApp/AireApp.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Aire.xcodeproj">
    </FileRef>
    <FileRef
