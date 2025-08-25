@@ -9,27 +9,28 @@
 import Foundation
 import CoreLocation
 import RxSwift
+import RxRelay
 
 struct Location {
 	static let sharedCoordinate = Coordinate()	// Singleton
 	static let sharedAddress = Address()		// Singleton
 
 	struct Address {
-		let variable = Variable<String>(String(""))
+		let variable = BehaviorRelay<String>(value: "")
 		var observable:Observable<String> {
 			return variable.asObservable()
 		}
-		
-		func update() {
-			let coordinate = sharedCoordinate.variable.value
-			let location = coordinateToLocation(coordinate: coordinate)
-			lookUp(location: location,
-				   completionHandler: { placemark in
-					if placemark != nil {
-						self.variable.value = (placemark?.name)!
-					}
-			})
-		}
+        
+        func update() {
+               let coordinate = sharedCoordinate.variable.value
+               let location = coordinateToLocation(coordinate: coordinate)
+               lookUp(location: location) { placemark in
+                   if let name = placemark?.name {
+                       self.variable.accept(name)   // ✅ use .accept, not .value =
+                   }
+               }
+           }
+
 		
 		func coordinateToLocation(coordinate: CLLocationCoordinate2D) -> CLLocation{
 			return CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
@@ -55,15 +56,17 @@ struct Location {
 	}
 
 	class Coordinate {
-		let variable = Variable<CLLocationCoordinate2D>(CLLocationCoordinate2D())
+        let variable = BehaviorRelay<CLLocationCoordinate2D>(value:CLLocationCoordinate2D())
 		var isReady: Bool = false
 		var observable:Observable<CLLocationCoordinate2D> {
 			return variable.asObservable()
 		}
-		func update(coordinate: CLLocationCoordinate2D) {
-			self.isReady = true
-			variable.value = coordinate
-		}
+
+        func update(coordinate: CLLocationCoordinate2D) {
+            isReady = true
+            variable.accept(coordinate)
+        }
+        
 		func isEqual(to: CLLocationCoordinate2D) -> Bool {
 			return self.variable.value.latitude.isEqual(to: to.latitude) && self.variable.value.longitude.isEqual(to: to.longitude)
 		}

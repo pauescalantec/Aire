@@ -1,49 +1,43 @@
 PODS:
-  - ReachabilitySwift (4.3.0)
+  - ReachabilitySwift (5.2.4)
   - RevealingSplashView (0.6.0)
-  - RxAtomic (4.4.0)
-  - RxCocoa (4.4.0):
-    - RxSwift (~> 4.0)
-  - RxSwift (4.4.0):
-    - RxAtomic (~> 4.4)
-  - SwiftyMarkdown (0.6.0)
-  - UICircularProgressRing (4.1.0)
+  - RxCocoa (6.9.0):
+    - RxRelay (= 6.9.0)
+    - RxSwift (= 6.9.0)
+  - RxRelay (6.9.0):
+    - RxSwift (= 6.9.0)
+  - RxSwift (6.9.0)
+  - SwiftyMarkdown (1.2.4)
+  - UICircularProgressRing (8.0.0)
 
 DEPENDENCIES:
   - ReachabilitySwift
   - RevealingSplashView
-  - RxCocoa
-  - RxSwift
+  - RxCocoa (~> 6.0)
+  - RxRelay (~> 6.0)
+  - RxSwift (~> 6.0)
   - SwiftyMarkdown
-  - UICircularProgressRing (from `https://github.com/QuimeraVerde/UICircularProgressRing.git`)
+  - UICircularProgressRing
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - ReachabilitySwift
     - RevealingSplashView
-    - RxAtomic
     - RxCocoa
+    - RxRelay
     - RxSwift
     - SwiftyMarkdown
-
-EXTERNAL SOURCES:
-  UICircularProgressRing:
-    :git: https://github.com/QuimeraVerde/UICircularProgressRing.git
-
-CHECKOUT OPTIONS:
-  UICircularProgressRing:
-    :commit: 917db2120652f6cc2909831aca4a707de99e129f
-    :git: https://github.com/QuimeraVerde/UICircularProgressRing.git
+    - UICircularProgressRing
 
 SPEC CHECKSUMS:
-  ReachabilitySwift: 408477d1b6ed9779dba301953171e017c31241f3
+  ReachabilitySwift: 32793e867593cfc1177f5d16491e3a197d2fccda
   RevealingSplashView: 40c5a770894459736acdc95655eeba0dd30ce91c
-  RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
-  RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
-  RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
-  SwiftyMarkdown: 698fe6b283dddac69747f4e08ed0d067c18e0356
-  UICircularProgressRing: 0a0b5b10aa12cb33b2ad4657abafd3e55676e74e
+  RxCocoa: ac16414696ae706516be3e1ab00fcce5bdc9be8a
+  RxRelay: 6b0c930e5cef57d5fe2032571e5e65b78e3cbdb1
+  RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
+  SwiftyMarkdown: 7cdec87c6ab5cd9ea0e22ced288e889960649ba5
+  UICircularProgressRing: 19927375b2b21b5fa5fd9582f15ccdef9659da16
 
-PODFILE CHECKSUM: 8207e85e25eb35233405bc64b8f46fa1c085a448
+PODFILE CHECKSUM: b26b4e880bb445dcf9b62f8f2cf6d02a12732157
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.16.2

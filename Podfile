@@ -6,10 +6,11 @@ target 'Aire' do
 use_frameworks!
 
 # Pods for Aire
-pod 'RxSwift'
-pod 'RxCocoa'
+pod 'RxSwift', '~> 6.0'
+pod 'RxRelay', '~> 6.0'
+pod 'RxCocoa', '~> 6.0'
 pod 'ReachabilitySwift'
-pod 'UICircularProgressRing', :git => 'https://github.com/QuimeraVerde/UICircularProgressRing.git'
+pod 'UICircularProgressRing'
 pod 'SwiftyMarkdown'
 pod 'RevealingSplashView'
 end

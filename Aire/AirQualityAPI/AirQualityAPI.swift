@@ -23,7 +23,7 @@ class DefaultAirQualityAPI {
 	}
 
 	func report(coordinate: CLLocationCoordinate2D) -> Observable<AirQualityReport> {
-		let variable = Variable<AirQualityReport>(AirQualityReport())
+        let variable = BehaviorRelay<AirQualityReport>(value:AirQualityReport())
 		var observable:Observable<AirQualityReport> {
 			return variable.asObservable()
 		}

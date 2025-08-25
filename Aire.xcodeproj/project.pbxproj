@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,7 +40,7 @@
 		2BC83D0520EAE75400777995 /* pm10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BC83D0420EAE75400777995 /* pm10.jpg */; };
 		2BC83D1320EAEE3400777995 /* pm10.scn in Resources */ = {isa = PBXBuildFile; fileRef = 2BC83D1220EAEE3400777995 /* pm10.scn */; };
 		2BC83D1720EBF4D600777995 /* pm25.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2BC83D1520EBF4D500777995 /* pm25.jpg */; };
-		E30B31B361D1B280877CC777 /* Pods_Aire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29E217A5ED37E5CE9520CF8E /* Pods_Aire.framework */; };
+		AA996C2E86228B3EB5CC79BA /* Pods_Aire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9C1E1D41DA108B6C933606 /* Pods_Aire.framework */; };
 		FF13D51D20F96AC600DF9562 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF13D51C20F96AC600DF9562 /* CircleView.swift */; };
 		FF13D52A20FA652900DF9562 /* pm10-definition.md in Resources */ = {isa = PBXBuildFile; fileRef = FF13D52820FA574D00DF9562 /* pm10-definition.md */; };
 		FF15313120F7EC8C00B75245 /* PollutantIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF15313020F7EC8B00B75245 /* PollutantIdentifier.swift */; };
@@ -79,7 +79,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		29E217A5ED37E5CE9520CF8E /* Pods_Aire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E9C1E1D41DA108B6C933606 /* Pods_Aire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3FE7A020F1888B0075D727 /* o3.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = o3.scn; sourceTree = "<group>"; };
 		2B3FE7CA20F1D9910075D727 /* co.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = co.scn; sourceTree = "<group>"; };
 		2B3FE7CC20F1D9990075D727 /* no2.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = no2.scn; sourceTree = "<group>"; };
@@ -98,8 +98,8 @@
 		2BC83D0420EAE75400777995 /* pm10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pm10.jpg; sourceTree = "<group>"; };
 		2BC83D1220EAEE3400777995 /* pm10.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = pm10.scn; sourceTree = "<group>"; };
 		2BC83D1520EBF4D500777995 /* pm25.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pm25.jpg; sourceTree = "<group>"; };
-		5E2F5C1A871038F73448C8AD /* Pods-Aire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aire.release.xcconfig"; path = "Pods/Target Support Files/Pods-Aire/Pods-Aire.release.xcconfig"; sourceTree = "<group>"; };
-		6A0ED46D4408D36BDE604ED0 /* Pods-Aire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Aire/Pods-Aire.debug.xcconfig"; sourceTree = "<group>"; };
+		6BEA1F081D63E576BADC7267 /* Pods-Aire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aire.release.xcconfig"; path = "Target Support Files/Pods-Aire/Pods-Aire.release.xcconfig"; sourceTree = "<group>"; };
+		954B134008A78955D5C60B3B /* Pods-Aire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aire.debug.xcconfig"; path = "Target Support Files/Pods-Aire/Pods-Aire.debug.xcconfig"; sourceTree = "<group>"; };
 		FF13D51C20F96AC600DF9562 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		FF13D52820FA574D00DF9562 /* pm10-definition.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "pm10-definition.md"; sourceTree = "<group>"; };
 		FF13D52D20FA66B100DF9562 /* co-definition.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "co-definition.md"; sourceTree = "<group>"; };
@@ -159,13 +159,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E30B31B361D1B280877CC777 /* Pods_Aire.framework in Frameworks */,
+				AA996C2E86228B3EB5CC79BA /* Pods_Aire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F5E301F7E6F264D19FD7569 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				954B134008A78955D5C60B3B /* Pods-Aire.debug.xcconfig */,
+				6BEA1F081D63E576BADC7267 /* Pods-Aire.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2B701E0220F13D8F0087106A /* Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,8 +215,8 @@
 			children = (
 				2BC83CE020DC2DB200777995 /* Aire */,
 				2BC83CDF20DC2DB200777995 /* Products */,
-				CB265E86A742F240970BB4CE /* Pods */,
-				76D941007E0A5308E3DE58E5 /* Frameworks */,
+				0F5E301F7E6F264D19FD7569 /* Pods */,
+				537ED03062394495D9643331 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -223,7 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				FF13D52720FA572000DF9562 /* MDs */,
-				FF83C5B320EEA13200CA68BC /* View */,
+				FF83C5B320EEA13200CA68BC /* Views */,
 				FF83C5AE20EE9FFA00CA68BC /* Helpers */,
 				FF83C5A420EE98D000CA68BC /* ViewController */,
 				FF83C59D20EE981700CA68BC /* AirQualityAPI */,
@@ -235,24 +244,15 @@
 			path = Aire;
 			sourceTree = "<group>";
 		};
-		76D941007E0A5308E3DE58E5 /* Frameworks */ = {
+		537ED03062394495D9643331 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29E217A5ED37E5CE9520CF8E /* Pods_Aire.framework */,
+				1E9C1E1D41DA108B6C933606 /* Pods_Aire.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB265E86A742F240970BB4CE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6A0ED46D4408D36BDE604ED0 /* Pods-Aire.debug.xcconfig */,
-				5E2F5C1A871038F73448C8AD /* Pods-Aire.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		FF13D52520FA56CB00DF9562 /* NibClass */ = {
+		FF13D52520FA56CB00DF9562 /* UIKitViews_Legacy */ = {
 			isa = PBXGroup;
 			children = (
 				FFC5A90B20F8066C00EC66B2 /* AirQualityMeter.swift */,
@@ -267,7 +267,7 @@
 				FF27132C211365DE002078E3 /* UIViewButton.swift */,
 				FF15313720F7ECB300B75245 /* UIViewExtension.swift */,
 			);
-			path = NibClass;
+			path = UIKitViews_Legacy;
 			sourceTree = "<group>";
 		};
 		FF13D52620FA570100DF9562 /* Nib */ = {
@@ -402,17 +402,17 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		FF83C5B320EEA13200CA68BC /* View */ = {
+		FF83C5B320EEA13200CA68BC /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				FF1E5CCE2103D65C0064A52F /* Animations */,
 				2BC83CE820DC2DB300777995 /* Assets.xcassets */,
-				FF13D52520FA56CB00DF9562 /* NibClass */,
+				FF13D52520FA56CB00DF9562 /* UIKitViews_Legacy */,
 				FF13D52620FA570100DF9562 /* Nib */,
 				2BC83CE520DC2DB200777995 /* Main.storyboard */,
 				2BC83CEA20DC2DB300777995 /* LaunchScreen.storyboard */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,11 +422,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BC83CF020DC2DB300777995 /* Build configuration list for PBXNativeTarget "Aire" */;
 			buildPhases = (
-				45FE23754DC529AFCEB4ADFD /* [CP] Check Pods Manifest.lock */,
+				D2FA891FFF6AF729A8E4896B /* [CP] Check Pods Manifest.lock */,
 				2BC83CDA20DC2DB200777995 /* Sources */,
 				2BC83CDB20DC2DB200777995 /* Frameworks */,
 				2BC83CDC20DC2DB200777995 /* Resources */,
-				EAA97FF9263428896E3538C7 /* [CP] Embed Pods Frameworks */,
+				15D9E2CFB74CEE3CE5E6955B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -517,52 +517,47 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		45FE23754DC529AFCEB4ADFD /* [CP] Check Pods Manifest.lock */ = {
+		15D9E2CFB74CEE3CE5E6955B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aire/Pods-Aire-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Aire/Pods-Aire-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Aire/Pods-Aire-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2FA891FFF6AF729A8E4896B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-Aire-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EAA97FF9263428896E3538C7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Aire/Pods-Aire-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyMarkdown/SwiftyMarkdown.framework",
-				"${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyMarkdown.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UICircularProgressRing.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Aire/Pods-Aire-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -746,17 +741,20 @@
 		};
 		2BC83CF120DC2DB300777995 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A0ED46D4408D36BDE604ED0 /* Pods-Aire.debug.xcconfig */;
+			baseConfigurationReference = 954B134008A78955D5C60B3B /* Pods-Aire.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C73SYU568H;
+				DEVELOPMENT_TEAM = J275U6CANY;
 				INFOPLIST_FILE = Aire/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Aire;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = QuimeraVerde.Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -766,17 +764,20 @@
 		};
 		2BC83CF220DC2DB300777995 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5E2F5C1A871038F73448C8AD /* Pods-Aire.release.xcconfig */;
+			baseConfigurationReference = 6BEA1F081D63E576BADC7267 /* Pods-Aire.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = C73SYU568H;
+				DEVELOPMENT_TEAM = J275U6CANY;
 				INFOPLIST_FILE = Aire/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				INFOPLIST_KEY_CFBundleDisplayName = Aire;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = QuimeraVerde.Application;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;

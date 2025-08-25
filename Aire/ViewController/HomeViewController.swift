@@ -131,10 +131,10 @@ class HomeViewController: UIViewController {
 	
 	private func setNetworkReachabilitySubscription() {
 		let network = NetworkManager.shared
-		network.reachability.whenUnreachable = { _ in
+		network.reachability?.whenUnreachable = { _ in
 			self.isConnected = false
 		}
-		network.reachability.whenReachable = { _ in
+		network.reachability?.whenReachable = { _ in
 			self.isConnected = true
 			Location.sharedAddress.update()
 			self.callApi()
