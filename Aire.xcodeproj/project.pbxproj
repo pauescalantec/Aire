@@ -445,7 +445,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
-				ORGANIZATIONNAME = QuimeraVerde;
+				ORGANIZATIONNAME = OkieDokieTechnologies;
 				TargetAttributes = {
 					2BC83CDD20DC2DB200777995 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -747,7 +747,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J275U6CANY;
 				INFOPLIST_FILE = Aire/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Aire;
+				INFOPLIST_KEY_CFBundleDisplayName = "Air - Visualize Air Quality";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -755,7 +755,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = QuimeraVerde.Application;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quimeraverde.aire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -770,7 +770,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J275U6CANY;
 				INFOPLIST_FILE = Aire/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Aire;
+				INFOPLIST_KEY_CFBundleDisplayName = "Air - Visualize Air Quality";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -778,7 +778,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = QuimeraVerde.Application;
+				PRODUCT_BUNDLE_IDENTIFIER = com.quimeraverde.aire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
