@@ -16,6 +16,7 @@ struct MainAppView: View {
                 LandingView(startAppAction: {
                     // Boolean that controls the show camera
                     aireModel.showCameraView.toggle()
+                    aireModel.fetchAirQuality()
                 })
             } else {
                 // Show AR view

@@ -10,7 +10,10 @@ import ARKit
 import UIKit
 internal import Combine
 
+/// To be deprecated or re-used for RealityKit
+@available(*, deprecated, message: "Adopt RKCameraView to this, otherwise do not use")
 class ARDelegate: NSObject, ARSCNViewDelegate, ObservableObject {
+
     @Published var message:String = "starting AR"
     
     func setARView(_ arView: ARSCNView) {
